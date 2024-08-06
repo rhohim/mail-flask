@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <form action="/form" method="POST">
+            <div>
+                <input type="text" name="Name" placeholder="Name">
+            </div>
+            <div>
+                <input type="text" name="Number" placeholder="Phone Number">
+            </div>
+            <div>
+                <input type="text" name="Email" placeholder="Email">
+            </div>
+            <div>
+                <button type="submit" class="btn btn-secondary">Send</button>
+            </div>
+            {% if send %}
+            <div>
+                Success
+            </div>
+            {% endif %}
+        </form>
+    </body>
+</html>
